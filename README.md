@@ -1,74 +1,95 @@
-# JELEE Mini Project - Yoga Responsive Website Redesign
-실존하는 요가원 웹사이트를 선정하여 반응형으로 새롭게 제작하였습니다.
+# 🧘‍♀️🔁🌐 요가원 반응형 웹사이트 리뉴얼
+> 실존하는 요가 스튜디오의 웹사이트를 벤치마킹하여 Redesign을 하였습니다.<br>
+> 그리고 반응형으로도 제작하여 사용자가 다양한 방식으로 접근을 할 수 있도록 하였습니다.
+```
+- 개발 기간: 2024-06-25 ~ 2024-08-04
+- 목적: React를 이해하고 개인이 가볍게 사용할 목적으로 React를 사용하여 To-do List를 제작하였습니다.
+```
+---
 
-:star: [JELEE Notion (Click!)](https://dev-jelee.notion.site/dev-jelee-5686cfa35c1b4c859a27de25d5fad5dd?pvs=4) 로 이동하면 해당 프로젝트 또는 다른 프로젝트의 내용과 저의 이력서를 볼 수 있습니다. :star:
+## 🧩 구현 기능
+<table>
+  <thead>
+    <tr>
+      <th>기능</th>
+      <th>설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>원페이지 반응형</td>
+      <td>하나의 페이지에 PC, 태블릿, 모방리 너비에 맞춤 반응형 개발</td>
+    </tr>
+    <tr>
+      <td>메뉴 고정</td>
+      <td>상단에 menu를 고정하여 스크롤 다운을 해도 상시 보임</td>
+    </tr>
+    <tr>
+      <td>토글 기능</td>
+      <td>768px 이하에서 메뉴 버튼이 토글 형태로 바뀐다. 스케쥴 섹션을 접었다 폈다 할 수 있다.</td>
+    </tr>
+    <tr>
+      <td>세션 이동</td>
+      <td>메뉴를 클릭하면 해당 섹션으로 부드럽게 이동함</td>
+    </tr>
+    <tr>
+      <td>이미지 모달창</td>
+      <td>실내 사진을 클릭하면 이미지 팝업창으로 보다 이미지를 크게 볼 수 있음.<br> 그리고 모달창이 실행됐을 경우 스크롤 기능을 막음.</td>
+    </tr>
+  </tbody>
+</table>
 
-<br/>
+---
 
-## 	:speech_balloon: 프로젝트 소개
-[푸쉬파 요가 스튜디오](https://pushpayogastudio.modoo.at/)의 웹사이트를 벤치마킹하여 Redesign을 하였습니다.
-그리고 반응형으로도 제작하여 사용자가 다양한 방식으로 접근을 할 수 있도록 하였습니다.
-> [!CAUTION]
-> 경고: 이 미니 프로젝트는 상업적인 용도가 아닙니다.
-
-<br/>
-
-## :walking: 프로젝트 목적
-HTML5, CSS3을 사용하여 반응형 웹사이트를 제작하면서 경험을 쌓는 것과 동적인 부분을 JavaScript만을 사용하여 구현을 함으로써 언어에 대한 이해도와 경험을 쌓기 위함입니다.
-
-<br/>
-
-## :calendar: 개발 기간
-2024-06-25 ~ 2024-08-04
-- 06/15 ~ 06/16 레퍼런스 찾기
-- 06/16 ~ 6/22 기획 및 시안 작업
-- 07/23 구조 설계 (DOM Tree)
-- 07/24 개발 시작
-- 08/04 개발 완료 및 종료
-
-<br/>
-
-## 	:star: 프로그래머
-- JELEE
-
-<br/>
-
-## :computer: 개발 환경
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-- Visual Studio Code
-- GitHub
-
-<br/>
-
-## :clipboard: 기술 스택
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+## 🛠 사용 기술 스택
 - HTML5
 - CSS3
 - JavaScript
+- Tools: VS Code, Git & GitHub, GitHub Pages
 
-<br/>
+---
 
-## :gear: 주요 기능
-- 원페이지 형식의 반응형 웹사이트입니다.
-- 미디어 쿼리를 사용하여 브라우져 화면의 너비마다 보여지는 모습이 다르게 제작.
-  - media screen and (max: ...px) {}
-- 메뉴 버튼을 클릭하면 해당 섹션으로 이동하는 기능.
-  - forEach()문, offsetTop(), scrollTo() 사용.
-- 모바일 화면에서는 토글 버튼과 메뉴로 대체함.
-  - classList.toggle() 사용.
-- 수업 시간표가 적힌 부분을 토글 기능을 넣어 시간표를 접었다 폈다 할 수 있는 기능을 추가함.
-  - classList.toggle() 사용.
-- 갤러리의 이미지를 클릭하면 모달창이 화면에 출력되는 기능.
-  - forEach()문, addEventListener("click") 사용.
-- 모달창에 뜨는 이미지는 사용자가 선택한 이미지의 src 속성 값을 추출하여 모달창에 뜨는 이미지에 값을 주어 출력되는 기능.
-  - modalImg.src = galleryImg.src 이런식으로 사용.
-- 모달창이 떴을 경우 마우스 스크롤하는 기능과 터치하여 움직이는 기능을 방지하는 기능을 추가함.
-  - document.body.style.overflow 사용, addEventListener("touchmove") 사용.
+## 🎬 배포 & 데모
+🚀 [배포 사이트 바로가기](https://eziquexx.github.io/mini-yoga-website/) - GitHub Pages로 배포
 
-<br/>
+---
+
+## 📘 프로젝트 상세 기록 (블로그)
+👉 [포스팅 보러가기](https://dev-jelee.tistory.com/entry/mini-project-Yoga-Responsive-Website-Re-design) - 티스토리에 올린 포스트
+
+---
+
+## 📁 디렉토리 구조
+
+```
+📂 YOGA/
+├── index.html         // 메인 웹페이지
+├── img/               // 정적 이미지 모음
+├── js/                // 동적 기능 자바스크립트
+│   ├── modal.js 
+│   ├── moveSection.js 
+│   ├── scheduleToggleBtn.js 
+│   ├── toggleBtn.js 
+│   └── topBtn.js
+├── style/              // 스타일(CSS)+미디어쿼리
+│   ├── about.css
+│   ├── classContent.css
+│   ├── classType.css
+│   ├── components.css
+│   ├── contact.css
+│   ├── faq.css
+│   ├── footer.css
+│   ├── history.css
+│   ├── home.css
+│   ├── modal.css
+│   ├── navBar.css
+│   ├── reset.css
+│   ├── schedule.css
+│   ├── studioGallery.css
+│   └── topBtn.css
+```
+
+---
 
 ## :eyes: 개발 참고 자료
 - 메뉴 클릭하면 각 섹션으로 이동, top 버튼 클릭하면 상단으로 이동
@@ -81,8 +102,5 @@ HTML5, CSS3을 사용하여 반응형 웹사이트를 제작하면서 경험을 
   - [codepen-Disable scroll on Desktop and Mobile](https://codepen.io/wesleypimentel/pen/KpgXJW)
   - [stackoverflow-Disable scrolling in all mobile devices](https://stackoverflow.com/questions/10592411/disable-scrolling-in-all-mobile-devices)
 
-<br/>
+---
 
-## :label: 저작권 및 사용권 정보
-- 개인 미니 프로젝트이며 상업적이 용도가 아닙니다.
-- [푸쉬파 요가 스튜디오](https://pushpayogastudio.modoo.at/)는 실존하는 요가원입니다.
